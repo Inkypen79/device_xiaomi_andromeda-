@@ -1,3 +1,5 @@
 on init
     mount none /system/etc/libnfc-nxp.conf /vendor/etc/libnfc-nxp.conf bind
     mount none /system/etc/manifest.xml /vendor/etc/vintf/manifest.xml bind
+    mount none /system/lib/soundfx/libvolumelistener.so /vendor/lib/soundfx/libvolumelistener.so bind
+    mount none /system/lib64/soundfx/libvolumelistener.so /vendor/lib64/soundfx/libvolumelistener.so bind
