@@ -4,17 +4,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sdm845-common
--include device/xiaomi/sdm845-common/BoardConfigCommon.mk
+# Inherit from sm8150-common
+-include device/xiaomi/sm8150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/perseus
+DEVICE_PATH := device/xiaomi/andromeda
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := perseus
+TARGET_OTA_ASSERT_DEVICE := andromeda
 
 # Kernel
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := perseus_defconfig
+TARGET_KERNEL_CONFIG := andromeda_user_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -34,7 +34,7 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 TARGET_USES_NQ_NFC := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/perseus/BoardConfigVendor.mk
+-include vendor/xiaomi/andromeda/BoardConfigVendor.mk
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private

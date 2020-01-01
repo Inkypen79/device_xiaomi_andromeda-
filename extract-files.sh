@@ -7,8 +7,8 @@
 
 set -e
 
-export DEVICE=perseus
-export DEVICE_COMMON=sdm845-common
+export DEVICE=andromeda
+export DEVICE_COMMON=sm8150-common
 export VENDOR=xiaomi
 
 export DEVICE_BRINGUP_YEAR=2019
