@@ -24,4 +24,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Product
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.mod_device=cepheus_eea_global
+    ro.product.mod_device=andromeda_eea_global

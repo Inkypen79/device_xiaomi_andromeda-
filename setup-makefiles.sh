@@ -8,7 +8,7 @@
 set -e
 
 # Required!
-export DEVICE=cepheus
+export DEVICE=andromeda
 export DEVICE_COMMON=sm8150-common
 export VENDOR=xiaomi
 

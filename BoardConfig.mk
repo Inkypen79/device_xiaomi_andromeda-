@@ -7,22 +7,19 @@
 # Inherit from sm8150-common
 -include device/xiaomi/sm8150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/cepheus
+DEVICE_PATH := device/xiaomi/andromeda
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := cepheus
+TARGET_OTA_ASSERT_DEVICE := andromeda
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := cepheus
-
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+TARGET_BOOTLOADER_BOARD_NAME := andromeda
 
 # Kernel
-TARGET_KERNEL_CONFIG := cepheus_defconfig
+TARGET_KERNEL_CONFIG := andromeda_defconfig
 
 # Inherit from the proprietary version
--include vendor/xiaomi/cepheus/BoardConfigVendor.mk
+-include vendor/xiaomi/andromeda/BoardConfigVendor.mk
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
