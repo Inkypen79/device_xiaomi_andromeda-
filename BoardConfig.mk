@@ -14,7 +14,7 @@ TARGET_OTA_ASSERT_DEVICE := andromeda
 
 # Kernel
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := andromeda_user_defconfig
+TARGET_KERNEL_CONFIG := andromeda_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
